@@ -1,27 +1,51 @@
-body {
+  body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url(assets/img/background.png);
+  }
+
+  * {
+    color: #ffffff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .nav-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-* {
-    box-sizing: border-box;
-}
+  .nav-link {
+    text-align: justify;
+    display: flex;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+  }
 
-header {
-    border: 25px solid red;
-}
 
-main {
-    border: 25px solid blue;
-}
+  .bio {
+    text-align: center;
+  }
 
-footer {
-    border: 25px solid brown;
-}
+  a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+  }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
+  a:hover {
+    background-size: 100% 2px;
+  }
