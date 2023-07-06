@@ -27,6 +27,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url(assets/img/green-backg.png);
   }
 
   .nav-link {
@@ -35,11 +36,12 @@
     line-height: 50px;
     text-decoration: none;
     font-size: 25px;
+    color: #000000;
   }
 
 
   .bio {
-    margin: 40px 75px;
+    text-align: center;
   }
 
   a {
@@ -53,4 +55,34 @@
 
   a:hover {
     background-size: 100% 2px;
+  }
+
+  .section {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .contact-github {
+    list-style-image: url(assets/img/github.png);
+  }
+
+  .contact-email {
+    list-style-image: url(assets/img/email.png);
+  }
+
+  .contact-phone {
+    list-style-image: url(assets/img/telephone.png);
+  }
+
+  .contact-telegram {
+    list-style-image: url(assets/img/telegram.png);
+    padding: 5px 1px 5px 0px;
+  }
+
+  .section-title {
+    color: #000000;
+  }
+
+  .code {
+    text-align: left;
   }
