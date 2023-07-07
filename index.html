@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madiyar Kenzhebayev CV</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon.jpg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -42,7 +40,7 @@
             </li>
           </ul>
           <div class="bio">
-            <img src="assets/img/avatar.png" alt="My photo" class="avatar" />
+            <img src="assets/img/avatar.png" alt="My photo" class="avatar">
             <h1 style="font-size: 40px">Kenzhebayev Madiyar</h1>
             <h2 style="font-weight: normal">Junior Front-End Developer</h2>
           </div>
@@ -80,19 +78,19 @@
           </section>
           <section class="section" id="code">
             <h2 class="section-title">Code</h2>
+            <pre>
             <code class="code">
-              <pre>
               function squareDigits(num){
                 let s = num.toString();
                 let ans = '';
-                for(let i = 0; i < s.length; i++) {
+                for(let i = 0; i &lt; s.length; i++) {
                   let j = parseInt(s[i]) ** 2;
                   ans += j;
                 }
                 return +ans;
               }
-              </pre>
             </code>
+          </pre>
           </section>
           <section class="section" id="courses">
             <h2 class="section-title">Courses</h2>
@@ -104,7 +102,9 @@
           </section>
           <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
-            <li><a href="https://madikensky.github.io/rsschool-cv/" target="_blank" style="color: gold;">CV</a></li>
+            <ul>
+            <li class="git-projects"><a href="https://madikensky.github.io/rsschool-cv/" target="_blank" style="color: gold;">CV</a></li>
+          </ul>
           </section>
           <section class="section" id="education">
             <h2 class="section-title">Education</h2>
@@ -117,8 +117,16 @@
         </nav>
       </div>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav-footer">
+        <ul class="footer-elements">
+          <li class="footer-el"><p>© 2023</p></li>
+          <li class="footer-el github-profile" ><a href="https://github.com/Madikensky" target="_blank" style="color: gold;">Madikensky</a></li>
+          <li class="footer-el"><a href="https://rs.school/js/" target="_blank" class="rs-image"><img src="assets/svg/rs_school_js.svg" alt="rs-school"></a></li>
+        </ul>
+      </nav>
+      </div>
     </footer>
   </body>
 </html>
