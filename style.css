@@ -11,6 +11,22 @@
     scroll-behavior: smooth;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-weight: normal;
+  }
+
+  span {
+    color: gold;
+  }
+
+  a {
+    color: gold;
+  }
+
   .avatar {
     border-radius: 50%;
     width: 300px;
